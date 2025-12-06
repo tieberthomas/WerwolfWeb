@@ -1,10 +1,10 @@
-package com.tieber.werwolf
+package at.tieber.werwolf_web
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class WerwolfApplicationTests {
+class WerwolfWebApplicationTests {
 
 	@Test
 	fun contextLoads() {
