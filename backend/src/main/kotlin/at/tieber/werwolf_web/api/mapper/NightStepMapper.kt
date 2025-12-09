@@ -1,16 +1,14 @@
-package at.tieber.werwolf_web.api.mapper;
+package at.tieber.werwolf_web.api.mapper
 
-import at.tieber.werwolf_web.api.model.NightStepDto;
-import at.tieber.werwolf_web.logic.NightStep;
-import org.mapstruct.Mapper;
-
-import java.util.List;
+import at.tieber.werwolf_web.api.model.NightStepDto
+import at.tieber.werwolf_web.logic.NightStep
+import org.mapstruct.Mapper
 
 @Mapper(componentModel = "spring")
-public interface NightStepMapper {
+interface NightStepMapper {
 
-    List<NightStepDto> toDto(List<NightStep> nightSteps);
+    fun toDto(nightSteps: List<NightStep>): List<NightStepDto>
 
-    NightStepDto toDto(NightStep nightStep);
+    fun toDto(nightStep: NightStep): NightStepDto
 
 }
